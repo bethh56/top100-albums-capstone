@@ -1,0 +1,702 @@
+{
+  "album1" : {
+    "albumName" : "Sgt. Pepper/'s Lonely Hearts CLub Band",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/sgt-peppers-e4860c12-4da1-4e6d-bb86-81698a88dbde.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album2" : {
+    "albumName" : "Pet Sounds",
+    "bandName" : "The Beach Boys",
+    "releaseYear" : "1966",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136791-eafbc592120358b4d3d14cda5acebf62ae50a522.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock/Pop"
+  },
+  "album3" : {
+    "albumName" : "Revolver",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1966",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136792-daa031ec00ad83a2da305fe583d746d030fa46ca.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album4" : {
+    "albumName" : "Highway 61 Revisited",
+    "bandName" : "Bob Dylan",
+    "releaseYear" : "1965",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136793-3dbec55509cc2ca2776a37e27102718700790947.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album5" : {
+    "albumName" : "Rubber Soul",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1965",
+    "albumImage" : "Rock",
+    "genre" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136794-6a2b508760f8dfca2260822c63640baa769795b4.jpg?resize=1240,1240&w=385"
+  },
+  "album6" : {
+    "albumName" : "What/'s Going On",
+    "bandName" : "Marvin Gaye",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136795-89f4e4079e43af44a80043f496eebfc562e3c9ec.jpg?resize=1240,1240&w=385",
+    "genre" : "Classic Soul"
+  },
+  "album7" : {
+    "albumName" : "Exile on Main Street",
+    "bandName" : "The Rolling Stones",
+    "releaseYear" : "1972",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136796-a79e314b8bb4a44886afc91cf2db9b0e6f4a1526.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album8" : {
+    "albumName" : "London Calling",
+    "bandName" : "The Clash",
+    "releaseYear" : "1980",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136797-692d99af3ab2207de3a7757ad3eb2fc65644ed49.jpg?resize=1240,1240&w=385",
+    "genre" : "Punk Rock"
+  },
+  "album9" : {
+    "albumName" : "Blonde on Blonde",
+    "bandName" : "Bob Dylan",
+    "releaseYear" : "1966",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136798-c659072c7a5fd09b178fc73b1cc6c03bc9c5763b.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album10" : {
+    "albumName" : "The White Album",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136799-c851b340c6dccdeafaeb8d147ea084cba2e06236.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album11" : {
+    "albumName" : "The Sun Sessions",
+    "bandName" : "Elvis Presley",
+    "releaseYear" : "1999",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136800-7a33165e92d530dd0f7c190f9dd46f81b95c5913.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album12" : {
+    "albumName" : "Kind of Blue",
+    "bandName" : "Miles Davis",
+    "releaseYear" : "1959",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136801-7d7508478e8e401003325d5d0aaac731560d13ab.jpg?resize=1240,1240&w=385",
+    "genre" : "Jazz"
+  },
+  "album13" : {
+    "albumName" : "The Velvet Underground and Nico",
+    "bandName" : "The Velvet Underground",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136802-99e8a590fe492cdd130f7debb20f934748fbc4b7.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album14" : {
+    "albumName" : "Abbey Road",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136803-0921fbfa76c66953268f4bdeee9410ef7ef02536.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album15" : {
+    "albumName" : "Are You Experienced?",
+    "bandName" : "The Jimi Hendrix Experience",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136804-5c60b6f07182074469636bb45da1fd26b8d2a04f.jpg?resize=1240,1240&w=385",
+    "genre" : "Psychedelic Rock"
+  },
+  "album16" : {
+    "albumName" : "Blood on the Tracks",
+    "bandName" : "Bob Dylan",
+    "releaseYear" : "1975",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136805-d7f732b2975aa5f48929bab82e158620c28021ee.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album17" : {
+    "albumName" : "Nevermind",
+    "bandName" : "Nirvana",
+    "releaseYear" : "1991",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136806-21ccd83b5593ecaed7b7b09b5bcfa2aed935b208.jpg?resize=1240,1240&w=385",
+    "genre" : "Grunge"
+  },
+  "album18" : {
+    "albumName" : "Born To Run",
+    "bandName" : "Bruce Springsteen",
+    "releaseYear" : "1975",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136807-1ccdff7c10d78ca236e7272be46db2562737945a.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album19" : {
+    "albumName" : "Astral Weeks",
+    "bandName" : "Van Morrisoin",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136808-6f9fc2c6fadb5ba8118b7baa2cd016ddebee2f26.jpg?resize=1240,1240&w=385",
+    "genre" : "Singer-Songwriter"
+  },
+  "album20" : {
+    "albumName" : "Thriller",
+    "bandName" : "Michael Jackson",
+    "releaseYear" : "1982",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136809-5f1d3499fb3eed91d03d8c94213829d42fb87658.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album21" : {
+    "albumName" : "The Great Twenty-Eigth",
+    "bandName" : "Chuck Berry",
+    "releaseYear" : "1982",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136810-fc435e4ac67a99344a3f87b874346a03bb864a0d.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album22" : {
+    "albumName" : "The Complete Recordings",
+    "bandName" : "Robert Johnson",
+    "releaseYear" : "1990",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136811-d728ac46e2ce3da52113fcb8e4e593dac64015d6.jpg?resize=1240,1240&w=385",
+    "genre" : "Blues"
+  },
+  "album23" : {
+    "albumName" : "Plastic Ono Band",
+    "bandName" : "John Lennon",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136812-3de737814351d39eb4854aed81106f8b2f7564e3.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album24" : {
+    "albumName" : "Innervisions",
+    "bandName" : "Stevie Wonder",
+    "releaseYear" : "1973",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136813-cd9ed0f8f7ee429ef0f61b2e111a7bbce304f001.jpg?resize=1240,1240&w=385",
+    "genre" : "Classic Soul"
+  },
+  "album25" : {
+    "albumName" : "Live at the Apollo",
+    "bandName" : "James Brown",
+    "releaseYear" : "1963",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136814-b56e02aec79042fa9b1af99d683ded0c8a2bd461.jpg?resize=1240,1240&w=385",
+    "genre" : "R&B/Soul"
+  },
+  "album26" : {
+    "albumName" : "Rumours",
+    "bandName" : "Fleetwood Mac",
+    "releaseYear" : "1977",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136815-cbb03ec26a73d7619600851e27bddf3511abf4de.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album27" : {
+    "albumName" : "The Joshua Tree",
+    "bandName" : "U2",
+    "releaseYear" : "1987",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136816-520bddc06d6e0cc15e5e664403130b7f82c647ed.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album28" : {
+    "albumName" : "Who/'s Next",
+    "bandName" : "The Who",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136817-8771b654101c38cee38046c90461899f4609dcc7.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album29" : {
+    "albumName" : "Led Zeppelin",
+    "bandName" : "Led Zeppelin",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136818-f46de354cee13132e928bb4793b21bf466deddcf.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album30" : {
+    "albumName" : "Blue",
+    "bandName" : "Joni Mitchell",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136819-028f49baec27d23d1cb2aab9039fd5c59cebcfa8.jpg?resize=1240,1240&w=385",
+    "genre" : "Singer-Songwriter"
+  },
+  "album31" : {
+    "albumName" : "Bringing It All Back Home",
+    "bandName" : "Bob Dylan",
+    "releaseYear" : "1965",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136820-269c3d6190e2dc0dc53c9692a3fccb1b0297d8ba.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk-Rock"
+  },
+  "album32" : {
+    "albumName" : "Let it Bleed",
+    "bandName" : "The Rolling Stones",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136821-33e6772d3021760a05f42698be40425d1e5302b3.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album33" : {
+    "albumName" : "Ramones",
+    "bandName" : "Ramones",
+    "releaseYear" : "1976",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136822-e9c37a4eaa1dfdd20c30153be4966ef0059eea5b.jpg?resize=1240,1240&w=385",
+    "genre" : "Punk Rock"
+  },
+  "album34" : {
+    "albumName" : "Music From Big Pink",
+    "bandName" : "The Band",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136824-53ea5be949478362759c48a2709486aa141fd212.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk=Rock"
+  },
+  "album35" : {
+    "albumName" : "The Rise and Fall of Ziggy Stardust and the Spiders From Mars",
+    "bandName" : "David Bowie",
+    "releaseYear" : "1972",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136823-796577260b3b30587c896ff08e32c4b39c96e207.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album36" : {
+    "albumName" : "Tapestry",
+    "bandName" : "Carole King",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136825-665baaa4458af3052fe54e61b4f877ff0fdbfee4.jpg?resize=1240,1240&w=385",
+    "genre" : "Singer-Songwriter"
+  },
+  "album37" : {
+    "albumName" : "Hotel California",
+    "bandName" : "The Eagles",
+    "releaseYear" : "1976",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136826-c1cb2fd484afdaff16cb9f5c0a397c120ff3f74a.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album38" : {
+    "albumName" : "The Anthology",
+    "bandName" : "Muddy Waters",
+    "releaseYear" : "2001",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136827-fe53e95b3d42bfba65bdf63893ac156bda42c4a9.jpg?resize=1240,1240&w=385",
+    "genre" : "Blues"
+  },
+  "album39" : {
+    "albumName" : "Please Please Me",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1963",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136828-a98228297da2e4b977752517870aa0f0084a260d.jpg?resize=1240,1240&w=385",
+    "genre" : "1963"
+  },
+  "album40" : {
+    "albumName" : "Forever Changes",
+    "bandName" : "Love",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136829-98c7140da22f3d65f5af7dc59af391d8abd0ee52.jpg?resize=1240,1240&w=385",
+    "genre" : "Psychedelic Rock"
+  },
+  "album41" : {
+    "albumName" : "Never Mind the Bollocks, Here’s the Sex Pistols",
+    "bandName" : "Sex Pistols",
+    "releaseYear" : "1977",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136830-ad8c0086034df4e67974c150d0f4f8ec469584eb.jpg?resize=1240,1240&w=385",
+    "genre" : "Punk Rock"
+  },
+  "album42" : {
+    "albumName" : "The Doors",
+    "bandName" : "The Doors",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136831-1ea331d7c82fbb8fa7071b77d4f657b109d1c788.jpg?resize=1240,1240&w=385",
+    "genre" : "Psychedelic Rock"
+  },
+  "album43" : {
+    "albumName" : "The Dark Side of the Moon",
+    "bandName" : "Pink Floyd",
+    "releaseYear" : "1973",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136832-861c5694612fa245049704a6d3ab31387b19c834.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album44" : {
+    "albumName" : "Horses",
+    "bandName" : "Patti Smith",
+    "releaseYear" : "1975",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136833-e7a996baf4047f8daed97e5f5bd4490fb7c1f697.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album45" : {
+    "albumName" : "The Band",
+    "bandName" : "The Band",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136834-0ac466eab206d17e99e3329c482993dab1bee18d.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album46" : {
+    "albumName" : "Legend",
+    "bandName" : "Bob Marley and the Wailers",
+    "releaseYear" : "1984",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136835-96be4f1be7b743e59bc37c675556ee33492da56d.jpg?resize=1240,1240&w=385",
+    "genre" : "Reggae"
+  },
+  "album47" : {
+    "albumName" : "A Love Supreme",
+    "bandName" : "John Coltrane",
+    "releaseYear" : "1964",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136836-02531855485466bc333d2947a4dd31f2b9f61748.jpg?resize=1240,1240&w=385",
+    "genre" : "Avant-Garde Jazz"
+  },
+  "album48" : {
+    "albumName" : "It Takes a Nation of Millions to Hold Us Back",
+    "bandName" : "Public Enemy",
+    "releaseYear" : "1988",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136837-0f1f21ff75e649209670aa34b650d8b0f3a7b9ef.jpg?resize=1240,1240&w=385",
+    "genre" : "Hip-Hop"
+  },
+  "album49" : {
+    "albumName" : "At Fillmore East",
+    "bandName" : "The Allman Brothers Band",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136838-effe20936e258567d11473ae17e244dac6b208d8.jpg?resize=1240,1240&w=385",
+    "genre" : "Blues Rock"
+  },
+  "album50" : {
+    "albumName" : "Here/'s Little Richard",
+    "bandName" : "Little Richard",
+    "releaseYear" : "1957",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136839-7a68ae240f7399bef642adb1c492ac20ab664b33.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album51" : {
+    "albumName" : "Bridge Over Troubled Water",
+    "bandName" : "Simon and Garfunkel",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136840-0a328443dbf33f1e8724c5223b2d97fca48106c5.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album52" : {
+    "albumName" : "Greatest Hits",
+    "bandName" : "Al Green",
+    "releaseYear" : "1975",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136841-e9ed00227a28b80f6c6796798da58c5a6958eec2.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album53" : {
+    "albumName" : "Meet the Beatles",
+    "bandName" : "The Beatles",
+    "releaseYear" : "1964",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136842-c567aea05a250999e7e2046d49200a11d83d290a.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album54" : {
+    "albumName" : "The Birth of Soul: The Complete Atlantic Recordings",
+    "bandName" : "Ray Charles",
+    "releaseYear" : "1991",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136843-7a56419fc667671522a7cb18f9a0fd66c0ca04ae.jpg?resize=1240,1240&w=385",
+    "genre" : "Rhythem and Blues"
+  },
+  "album55" : {
+    "albumName" : "Electric Ladyland",
+    "bandName" : "The Jimi Hendrix Experience",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136844-876329989fb53101df678baaf238180b18820803.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album56" : {
+    "albumName" : "Elvis Presley",
+    "bandName" : "Elvis Presley",
+    "releaseYear" : "1956",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136845-3d96d5d6d9bcbc6282936dc1ffd06578cabebc32.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album57" : {
+    "albumName" : "Songs in the Key of Life",
+    "bandName" : "Stevie Wonder",
+    "releaseYear" : "1976",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136846-1becb7e01d2771e049f1a09ffd58cd77f0e146a2.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album58" : {
+    "albumName" : "Beggars Banquet",
+    "bandName" : "The Rolling Stones",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136847-ee1d802faf428f24bfdcf23cead8f5c9797f6ab4.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album59" : {
+    "albumName" : "Chronicle Vol.1",
+    "bandName" : "Creedence Clearwater Revival",
+    "releaseYear" : "1976",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136848-c305a673692a96976fce8b404c1bf141b7db621e.jpg?resize=1240,1240&w=385",
+    "genre" : "Southern Rock"
+  },
+  "album60" : {
+    "albumName" : "Trout Mask Replica",
+    "bandName" : "Captain Beefheart and His Magic Band",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136849-a4b6f5b0e8e36b7180fdea278755bb4099099d14.jpg?resize=1240,1240&w=385",
+    "genre" : "Blues"
+  },
+  "album61" : {
+    "albumName" : "Greatest Hits",
+    "bandName" : "Sly and the Family Stone",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136850-76aa8b1a1fec965275cf1bf6576217d5716f6f0a.jpg?resize=1240,1240&w=385",
+    "genre" : "Funk"
+  },
+  "album62" : {
+    "albumName" : "Appetite for Destruction",
+    "bandName" : "Guns N Roses",
+    "releaseYear" : "1987",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136851-4e6da25216527bf930346f52271b6eb2122a716d.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album63" : {
+    "albumName" : "Achtung Baby",
+    "bandName" : "U2",
+    "releaseYear" : "1991",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136852-05c62e826eb9c0ef8fbf3e4e2d807a355efb0c94.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album64" : {
+    "albumName" : "Sticky Fingers",
+    "bandName" : "The Rolling Stones",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136853-631aebeb7535cea014244f29a3852307841c56bb.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album65" : {
+    "albumName" : "Back to Mono (1958-1969)",
+    "bandName" : "Phil Spector",
+    "releaseYear" : "1991",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136854-e2ebe7062791aa4ff3e0c5d93bf32d2d2a588f40.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album66" : {
+    "albumName" : "Moondance",
+    "bandName" : "Van Morrison",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136855-62fc0b0d65ef7c2f2a9a37cb66f1051e927bcd50.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk Rock"
+  },
+  "album67" : {
+    "albumName" : "Kid A",
+    "bandName" : "Radiohead",
+    "releaseYear" : "2000",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136714-dc5847d14a98590646f38ff1bb045fe6e9523850.jpg?resize=1240,1240&w=385",
+    "genre" : "Alternative Rock"
+  },
+  "album68" : {
+    "albumName" : "Off the Wall",
+    "bandName" : "Michael Jackson",
+    "releaseYear" : "1979",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136856-8c1e5b0582a5b46fc80e0db97c87f48661e672e8.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album69" : {
+    "albumName" : "Led Zeppelin IV",
+    "bandName" : "Led Zeppelin",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136857-c4082fd6526f33db9b4e851a72d96784119fd52c.jpg?resize=1240,1240&w=385",
+    "genre" : "Blues Rock"
+  },
+  "album70" : {
+    "albumName" : "The Stranger",
+    "bandName" : "Billy Joel",
+    "releaseYear" : "1977",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136858-ccdc7ef4844eea964e02ab50740e5cd4301a0ae9.jpg?resize=1240,1240&w=385",
+    "genre" : "Soft Rock"
+  },
+  "album71" : {
+    "albumName" : "Graceland",
+    "bandName" : "Paul Simon",
+    "releaseYear" : "1986",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136859-2dabb95cffdc9f2d4e37b3157cec36e34b382598.jpg?resize=1240,1240&w=385",
+    "genre" : "Singer-Songwriter"
+  },
+  "album72" : {
+    "albumName" : "Superfly",
+    "bandName" : "Curtis Mayfield",
+    "releaseYear" : "1972",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136860-c8bf4bb3309cfafe5b4bddece81a591e52fa2857.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album73" : {
+    "albumName" : "Physical Graffiti",
+    "bandName" : "Led Zeppelin",
+    "releaseYear" : "1975",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136861-53a00c2335b36eb447e75ae2387e96b0e6ba6a20.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album74" : {
+    "albumName" : "After the Gold Rush",
+    "bandName" : "Neil Young",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136862-7e03f32e7c9594a706f545a9c8cdd53e260bcafd.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album75" : {
+    "albumName" : "Star Time",
+    "bandName" : "James Brown",
+    "releaseYear" : "1991",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136863-a7b2521a515dc36ea56d181cada01ce0a27bbbb4.jpg?resize=1240,1240&w=385",
+    "genre" : "Funk"
+  },
+  "album76" : {
+    "albumName" : "Purple Rain",
+    "bandName" : "Prince and the Revolution",
+    "releaseYear" : "1984",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136864-2dae4591d79f7c29a18496926740d720908e3127.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album77" : {
+    "albumName" : "Back in Black",
+    "bandName" : "AC/DC",
+    "releaseYear" : "1980",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136865-06d9970eddbfbcae66ad664a73c6d52862d91d7c.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album78" : {
+    "albumName" : "Otis Blue",
+    "bandName" : "Otis Redding",
+    "releaseYear" : "1965",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136866-93f4b651ac369f0603463d0c1a539ab7ccd05241.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album79" : {
+    "albumName" : "Led Zeppelin II",
+    "bandName" : "Led Zeppelin",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136867-cb5312fe6a5648ee4441e580ad904c4600a8d45e.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album80" : {
+    "albumName" : "Imagine",
+    "bandName" : "John Lennon",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136868-0b79ac312d1402b86d803ab464e58c456277e9fc.jpg?resize=1240,1240&w=385",
+    "genre" : "Soft Rock"
+  },
+  "album81" : {
+    "albumName" : "The Clash",
+    "bandName" : "The Clash",
+    "releaseYear" : "1979",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136869-ce67282f913d3d9bc2433f7084a5f5d22bc1f38a.jpg?resize=1240,1240&w=385",
+    "genre" : "Punk Rock"
+  },
+  "album82" : {
+    "albumName" : "Harvest",
+    "bandName" : "Neil Young",
+    "releaseYear" : "1972",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136870-ec319af29f5efd5d20d9633f0c535e0151e59a42.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album83" : {
+    "albumName" : "Axis: Bold as Love",
+    "bandName" : "The Jimi Hendrix Experience",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136871-8bd73526cc9968e358761e26e4fe42c641910802.jpg?resize=1240,1240&w=385",
+    "genre" : "Psychedlic Rock"
+  },
+  "album84" : {
+    "albumName" : "I Never Loved a Man the Way I Loved You",
+    "bandName" : "Aretha Franklin",
+    "releaseYear" : "1967",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136890-2ae6552932d20ce4bdc5c361c7f57797c8ba2217.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album85" : {
+    "albumName" : "Lady Soul",
+    "bandName" : "Aretha Franklin",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136891-434330e80536d2bb420ca5ff91a6ed24651f0e69.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album86" : {
+    "albumName" : "Born in the U.S.A.",
+    "bandName" : "Bruce Springsteen",
+    "releaseYear" : "1984",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136893-942105f84afcbf3168dd9c0ad83f5130b368af82.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album87" : {
+    "albumName" : "The Wall",
+    "bandName" : "Pink Floyd",
+    "releaseYear" : "1979",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136895-f4449616e18127542ce4b5534585068d30a10201.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album88" : {
+    "albumName" : "At Folsom Prison",
+    "bandName" : "Johnny Cash",
+    "releaseYear" : "1968",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136897-af22084dc4088905a4eb9afab73bb7efc9ce780b.jpg?resize=1240,1240&w=385",
+    "genre" : "Country"
+  },
+  "album89" : {
+    "albumName" : "Dusty in Memphis",
+    "bandName" : "Dusty Springfield",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136898-d40f4d4da2d9d7a419717c8344f1444281c98dc5.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album90" : {
+    "albumName" : "Talking Book",
+    "bandName" : "Stevie Wonder",
+    "releaseYear" : "1972",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-stevie-wonder-50728d4d-55cb-4812-aa33-191f340866f1.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album91" : {
+    "albumName" : "Goodbye Yellow Brick Road",
+    "bandName" : "Elton John",
+    "releaseYear" : "1973",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136900-62a6bb35e40a1315bcdb5a541492bc93fc3a7cfb.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album92" : {
+    "albumName" : "20 Golden Greats",
+    "bandName" : "Buddy Holly",
+    "releaseYear" : "1978",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136901-a8a3f78f4dc628cd1451f8c5e38979d097e59fb5.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album93" : {
+    "albumName" : "Sign /‘o/’ the Times",
+    "bandName" : "Prince",
+    "releaseYear" : "1987",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136903-ffe7f8ac37e7fd481d268c3109ce8ade62f4e1d4.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  },
+  "album94" : {
+    "albumName" : "40 Greatest Hits",
+    "bandName" : "Hank Williams",
+    "releaseYear" : "1978",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136904-9a14d7c339541e7fa0f9218a21a873e83ae3fece.jpg?resize=1240,1240&w=385",
+    "genre" : "Country"
+  },
+  "album95" : {
+    "albumName" : "Bitches Brew",
+    "bandName" : "Miles Davis",
+    "releaseYear" : "1970",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136905-1aa850852a50d38f55ae0b0c688b2d4f4403c70b.jpg?resize=1240,1240&w=385",
+    "genre" : "Jazz"
+  },
+  "album96" : {
+    "albumName" : "Tommy",
+    "bandName" : "The Who",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136907-70195a5c116bff799265d42788bc73ca1fbfe622.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
+  },
+  "album97" : {
+    "albumName" : "The Freewheelin/’ Bob Dylan",
+    "bandName" : "Bob Dylan",
+    "releaseYear" : "1963",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136908-8e33d65973df4e70e8fbf8bd0dbdaace59293e68.jpg?resize=1240,1240&w=385",
+    "genre" : "Folk"
+  },
+  "album98" : {
+    "albumName" : "This Year/'s Model",
+    "bandName" : "Elvis Costello",
+    "releaseYear" : "1978",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136909-b1c40d0c34e89fa14f600ba775f425e52bd08224.jpg?resize=1240,1240&w=385",
+    "genre" : "New Wave/Post-Punk"
+  },
+  "album99" : {
+    "albumName" : "There’s a Riot Goin/’ On",
+    "bandName" : "Sly and the Family Stone",
+    "releaseYear" : "1971",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136910-c11fbdd3d1d1efe83f84ba5ea1ae7ceb24d1928d.jpg?resize=1240,1240&w=385",
+    "genre" : "Soul"
+  },
+  "album100" : {
+    "albumName" : "Odessy and Oracle",
+    "bandName" : "The Zombies",
+    "releaseYear" : "1969",
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136911-4e049f07b395009537a0950b9ad5c9463042a78f.jpg?resize=1240,1240&w=385",
+    "genre" : "Pop"
+  }  
+}
