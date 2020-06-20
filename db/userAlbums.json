@@ -1,0 +1,52 @@
+{
+  "userAlbum1": {
+    "likes" : true,
+    "albumId" : "album1",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum2": {
+    "likes" : true,
+    "albumId" : "album5",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum3": {
+    "likes" : false,
+    "albumId" : "album7",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum4": {
+    "likes" : true,
+    "albumId" : "album8",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum5": {
+    "likes" : true,
+    "albumId" : "album14",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum6": {
+    "likes" : false,
+    "albumId" : "album87",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum7": {
+    "likes" : true,
+    "albumId" : "album19",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum8": {
+    "likes" : false,
+    "albumId" : "album34",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum9": {
+    "likes" : true,
+    "albumId" : "album96",
+    "uid" : "userAlbum0009"
+  },
+  "userAlbum10": {
+    "likes" : true,
+    "albumId" : "album13",
+    "uid" : "userAlbum0009"
+  }
+}
