@@ -1,0 +1,52 @@
+{
+  "comments1" : {
+    "uid" : "uid329749",
+    "albumId" : "album1",
+    "comments" : "This album is great!"
+  },
+  "comments2" : {
+    "uid" : "uid329749",
+    "albumId" : "album10",
+    "comments" : "Did not like this one"
+  },
+  "comments3" : {
+    "uid" : "uid329749",
+    "albumId" : "album18",
+    "comments" : "Would be interested to learn more about this one"
+  },
+  "comments4" : {
+    "uid" : "uid329749",
+    "albumId" : "album15",
+    "comments" : "I like this album"
+  },
+  "comments5" : {
+    "uid" : "uid329749",
+    "albumId" : "album100",
+    "comments" : "This album is way too long. "
+  },
+  "comments6" : {
+    "uid" : "uid329749",
+    "albumId" : "album9",
+    "comments" : "I like this album"
+  },
+  "comments7" : {
+    "uid" : "uid329749",
+    "albumId" : "album7",
+    "comments" : "Best album by this band I have listened to yet"
+  },
+  "comments8" : {
+    "uid" : "uid329749",
+    "albumId" : "album2",
+    "comments" : "Neat"
+  },
+  "comments9" : {
+    "uid" : "uid329749",
+    "albumId" : "album12",
+    "comments" : "Cool"
+  },
+  "comments10" : {
+    "uid" : "uid329749",
+    "albumId" : "album11",
+    "comments" : "Not sure how this one made it into the count"
+  }
+}
