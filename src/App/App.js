@@ -1,12 +1,17 @@
 import React from 'react';
+
+import MyNavbar from '../components/MyNavbar/MyNavbar';
+import AlbumsContainer from '../components/AlbumsContainer/AlbumsContainer';
+import SingleAlbumContainer from '../components/SingleAlbumContainer/SingleAlbumContainer';
 import './App.scss';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-          <h1>Top 100 Albums</h1>
-          <button className="btn btn-primary"><i className="fas fa-record-vinyl"></i>Testing Button</button>
+        <MyNavbar />
+        <AlbumsContainer />
+        <SingleAlbumContainer />
       </div>
     );
   }
