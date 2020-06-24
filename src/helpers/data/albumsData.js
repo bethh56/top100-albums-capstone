@@ -17,4 +17,6 @@ const getAlbums = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getAlbums };
+const getSingleAlbum = (albumId) => axios.get(`${baseUrl}/albums/${albumId}.json`);
+
+export default { getAlbums, getSingleAlbum };

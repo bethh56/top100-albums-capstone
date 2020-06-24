@@ -7,6 +7,7 @@ import fbConnection from '../helpers/data/connections';
 import Auth from '../components/Auth/Auth';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
 import AlbumsContainer from '../components/AlbumsContainer/AlbumsContainer';
+import SingleAlbumContainer from '../components/SingleAlbumContainer/SingleAlbumContainer';
 import Footer from '../components/Footer/Footer';
 
 import './App.scss';
@@ -15,6 +16,7 @@ fbConnection();
 class App extends React.Component {
   state = {
     authed: false,
+    singleAlbumId: '',
   }
 
   componentDidMount() {
@@ -31,6 +33,10 @@ class App extends React.Component {
     this.removeListener();
   }
 
+  getSingleAlbumId = (albumId) => {
+    this.setState({ singleAlbumId: albumId });
+  }
+
   render() {
     const { authed } = this.state;
 
@@ -38,6 +44,9 @@ class App extends React.Component {
       let componentToLoad = '';
       if (authed) {
         componentToLoad = <AlbumsContainer />;
+      }
+      if (authed) {
+        componentToLoad = <SingleAlbumContainer />;
       } else {
         componentToLoad = <Auth />;
       }
