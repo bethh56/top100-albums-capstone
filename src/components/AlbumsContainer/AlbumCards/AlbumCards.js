@@ -4,9 +4,14 @@ import './AlbumCards.scss';
 
 class AlbumCards extends React.Component {
   render() {
+    const { album } = this.props;
+
     return (
-      <div className="AlbumCards">
-        <h3>Album Cards</h3>
+      <div className="AlbumCards col-4">
+        <div className="card">
+        <img className="card-img-top" src={album.albumImage} alt=""/>
+        <h3>{album.albumName}</h3>
+        </div>
       </div>
     );
   }
