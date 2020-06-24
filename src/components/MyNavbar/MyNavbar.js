@@ -6,7 +6,9 @@ class MyNavbar extends React.Component {
   render() {
     return (
       <div>
-        <h1>MyNavbar Component</h1>
+        <nav class="navbar navbar-light bg-light">
+          <h1 class="navbar-brand">Top 100 Albums</h1>
+        </nav>
       </div>
     );
   }
