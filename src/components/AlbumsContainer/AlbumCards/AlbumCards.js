@@ -7,13 +7,15 @@ class AlbumCards extends React.Component {
     const { album } = this.props;
 
     return (
-      <div className="AlbumCards col-4">
-        <div className="card">
-        <img className="card-img-top" src={album.albumImage} alt=""/>
-        <h3>{album.albumName}</h3>
-        <h3>{album.bandName}</h3>
-        <h3>{album.releaseYear}</h3>
-        <h3>{album.genre}</h3>
+      <div className="AlbumCards col-4 pb-3">
+        <div className="card albumCard">
+        <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
+        <div className="albumData">
+          <p>{album.albumName}</p>
+          <p>{album.bandName}</p>
+          <p>{album.releaseYear}</p>
+          <p>{album.genre}</p>
+        </div>
         </div>
       </div>
     );
