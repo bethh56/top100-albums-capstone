@@ -1,10 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import AlbumCards from './AlbumCards/AlbumCards';
 import albumsData from '../../helpers/data/albumsData';
 
 import './AlbumsContainer.scss';
 
 class AlbumsContainer extends React.Component {
+  static propTypes = {
+    viewSingleAlbum: PropTypes.func.isRequired,
+  }
+
   state = {
     albums: [],
   }
@@ -17,7 +23,9 @@ class AlbumsContainer extends React.Component {
 
   render() {
     const { albums } = this.state;
-    const displayAlbums = albums.map((album) => <AlbumCards key={album.id} album={album}/>);
+    const { viewSingleAlbum } = this.props;
+
+    const displayAlbums = albums.map((album) => <AlbumCards key={album.id} album={album} viewSingleAlbum={viewSingleAlbum}/>);
 
     return (
       <div className="AlbumsContainer container">
