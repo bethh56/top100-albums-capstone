@@ -20,8 +20,8 @@ class MyNavbar extends React.Component {
 
     return (
       <div>
-        <nav class="navbar navbar-light bg-light">
-          <h1 class="navbar-brand">Top 100 Albums</h1>
+        <nav className="navbar navbar-light bg-light">
+          <h1 className="navbar-brand">Top 100 Albums</h1>
           {
             authed
               ? <button className="btn btn-dark" onClick={this.logMeOut}>Logout</button>

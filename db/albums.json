@@ -1,6 +1,6 @@
 {
   "album1" : {
-    "albumName" : "Sgt. Pepper/'s Lonely Hearts CLub Band",
+    "albumName" : "Sgt. Pepper's Lonely Hearts CLub Band",
     "bandName" : "The Beatles",
     "releaseYear" : "1967",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/sgt-peppers-e4860c12-4da1-4e6d-bb86-81698a88dbde.jpg?resize=1240,1240&w=385",
@@ -31,11 +31,11 @@
     "albumName" : "Rubber Soul",
     "bandName" : "The Beatles",
     "releaseYear" : "1965",
-    "albumImage" : "Rock",
-    "genre" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136794-6a2b508760f8dfca2260822c63640baa769795b4.jpg?resize=1240,1240&w=385"
+    "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136794-6a2b508760f8dfca2260822c63640baa769795b4.jpg?resize=1240,1240&w=385",
+    "genre" : "Rock"
   },
   "album6" : {
-    "albumName" : "What/'s Going On",
+    "albumName" : "What's Going On",
     "bandName" : "Marvin Gaye",
     "releaseYear" : "1971",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136795-89f4e4079e43af44a80043f496eebfc562e3c9ec.jpg?resize=1240,1240&w=385",
@@ -189,7 +189,7 @@
     "genre" : "Rock"
   },
   "album28" : {
-    "albumName" : "Who/'s Next",
+    "albumName" : "Who's Next",
     "bandName" : "The Who",
     "releaseYear" : "1971",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136817-8771b654101c38cee38046c90461899f4609dcc7.jpg?resize=1240,1240&w=385",
@@ -343,7 +343,7 @@
     "genre" : "Blues Rock"
   },
   "album50" : {
-    "albumName" : "Here/'s Little Richard",
+    "albumName" : "Here's Little Richard",
     "bandName" : "Little Richard",
     "releaseYear" : "1957",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136839-7a68ae240f7399bef642adb1c492ac20ab664b33.jpg?resize=1240,1240&w=385",
@@ -644,7 +644,7 @@
     "genre" : "Rock"
   },
   "album93" : {
-    "albumName" : "Sign /‘o/’ the Times",
+    "albumName" : "Sign ‘o’ the Times",
     "bandName" : "Prince",
     "releaseYear" : "1987",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136903-ffe7f8ac37e7fd481d268c3109ce8ade62f4e1d4.jpg?resize=1240,1240&w=385",
@@ -672,21 +672,21 @@
     "genre" : "Rock"
   },
   "album97" : {
-    "albumName" : "The Freewheelin/’ Bob Dylan",
+    "albumName" : "The Freewheelin’ Bob Dylan",
     "bandName" : "Bob Dylan",
     "releaseYear" : "1963",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136908-8e33d65973df4e70e8fbf8bd0dbdaace59293e68.jpg?resize=1240,1240&w=385",
     "genre" : "Folk"
   },
   "album98" : {
-    "albumName" : "This Year/'s Model",
+    "albumName" : "This Year's Model",
     "bandName" : "Elvis Costello",
     "releaseYear" : "1978",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136909-b1c40d0c34e89fa14f600ba775f425e52bd08224.jpg?resize=1240,1240&w=385",
     "genre" : "New Wave/Post-Punk"
   },
   "album99" : {
-    "albumName" : "There’s a Riot Goin/’ On",
+    "albumName" : "There’s a Riot Goin’ On",
     "bandName" : "Sly and the Family Stone",
     "releaseYear" : "1971",
     "albumImage" : "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136910-c11fbdd3d1d1efe83f84ba5ea1ae7ceb24d1928d.jpg?resize=1240,1240&w=385",
