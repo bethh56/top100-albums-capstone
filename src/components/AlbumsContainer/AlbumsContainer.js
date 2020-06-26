@@ -9,6 +9,7 @@ import './AlbumsContainer.scss';
 class AlbumsContainer extends React.Component {
   static propTypes = {
     viewSingleAlbum: PropTypes.func.isRequired,
+    authed: PropTypes.bool.isRequired,
   }
 
   state = {
@@ -23,9 +24,9 @@ class AlbumsContainer extends React.Component {
 
   render() {
     const { albums } = this.state;
-    const { viewSingleAlbum } = this.props;
+    const { viewSingleAlbum, authed } = this.props;
 
-    const displayAlbums = albums.map((album) => <AlbumCards key={album.id} album={album} viewSingleAlbum={viewSingleAlbum}/>);
+    const displayAlbums = albums.map((album) => <AlbumCards key={album.id} album={album} viewSingleAlbum={viewSingleAlbum} authed={authed}/>);
 
     return (
       <div className="AlbumsContainer container">

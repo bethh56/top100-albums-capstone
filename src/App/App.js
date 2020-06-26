@@ -43,7 +43,7 @@ class App extends React.Component {
     const loadComponent = () => {
       let componentToLoad = '';
       if (authed && singleAlbumId.length === 0) {
-        componentToLoad = <AlbumsContainer viewSingleAlbum={this.viewSingleAlbum}/>;
+        componentToLoad = <AlbumsContainer viewSingleAlbum={this.viewSingleAlbum} authed={authed}/>;
       } else if (authed && singleAlbumId.length > 0) {
         componentToLoad = <SingleAlbumContainer albumId={singleAlbumId} viewSingleAlbum={this.viewSingleAlbum}/>;
       } else {
