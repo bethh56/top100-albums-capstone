@@ -1,3 +1,27 @@
 .SingleAlbumContainer {
   display: block;
 }
+
+.returnToHome {
+  background-color: #DD614A;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 5px;
+  color: #F6F4F4;
+  margin: 10px 0px;
+}
+
+.returnToHome:hover {
+  background-color: #f36951;
+}
+
+.SingleAlbumImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.singleAlbumData {
+  color: #F6F4F4;
+  text-align: left;
+}

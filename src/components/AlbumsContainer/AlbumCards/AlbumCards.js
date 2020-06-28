@@ -18,7 +18,7 @@ class AlbumCards extends React.Component {
     const { album, authed } = this.props;
 
     return (
-      <div className="AlbumCards col-sm-4 pb-3">
+      <div className="AlbumCards col-4 pb-3">
         {
           authed
             ? <div className="card albumCard" onClick={this.viewAlbum}>
