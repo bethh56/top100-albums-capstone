@@ -22,10 +22,24 @@
   text-align: center;
 }
 
+.albumDataFooter {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 .albumCard:hover .albumImage {
   opacity: 0.2;
 }
 
 .albumCard:hover .albumData {
+  opacity: 1;
+}
+
+.albumCard:hover .albumDataFooter {
   opacity: 1;
 }

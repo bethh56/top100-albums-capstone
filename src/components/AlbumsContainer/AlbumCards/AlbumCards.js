@@ -14,6 +14,11 @@ class AlbumCards extends React.Component {
     viewSingleAlbum(album.id);
   }
 
+  haveListened = (e) => {
+    e.preventDefault();
+    console.error('working');
+  }
+
   render() {
     const { album, authed } = this.props;
 
@@ -21,13 +26,18 @@ class AlbumCards extends React.Component {
       <div className="AlbumCards col-4 pb-3">
         {
           authed
-            ? <div className="card albumCard" onClick={this.viewAlbum}>
+            ? <div className="card albumCard">
              <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
-              <div className="albumData">
+              <div className="albumData" onClick={this.viewAlbum}>
                 <p>{album.albumName}</p>
                 <p>{album.bandName}</p>
                 <p>{album.releaseYear}</p>
                 <p>{album.genre}</p>
+            </div>
+            <div className="albumDataFooter">
+              <label> Have you listened to this album?
+                <input type="checkbox" name="IsMale" value="true" onClick={this.haveListened} />
+              </label>
             </div>
           </div>
             : <div className="card albumCard">
