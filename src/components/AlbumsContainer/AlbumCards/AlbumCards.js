@@ -4,6 +4,10 @@ import albumShape from '../../../helpers/propz/albumShape';
 import './AlbumCards.scss';
 
 class AlbumCards extends React.Component {
+  state = {
+    haveListened: false,
+  }
+
   static propTypes = {
     album: albumShape.albumShape,
   }
@@ -14,12 +18,12 @@ class AlbumCards extends React.Component {
     viewSingleAlbum(album.id);
   }
 
-  haveListened = (e) => {
-    e.preventDefault();
-    console.error('working');
+  haveListenedCheckbox = (e) => {
+    this.setState({ haveListened: e.target.checked });
   }
 
   render() {
+    const { haveListened } = this.state;
     const { album, authed } = this.props;
 
     return (
@@ -35,9 +39,13 @@ class AlbumCards extends React.Component {
                 <p>{album.genre}</p>
             </div>
             <div className="albumDataFooter">
-              <label> Have you listened to this album?
-                <input type="checkbox" name="IsMale" value="true" onClick={this.haveListened} />
-              </label>
+              <label className="mr-1"> Have you listened to this album?</label>
+                <input
+                  type="checkbox"
+                  checked={haveListened}
+                  id="haveListenedToAlbum"
+                  onChange={this.haveListenedCheckbox}
+                />
             </div>
           </div>
             : <div className="card albumCard">
