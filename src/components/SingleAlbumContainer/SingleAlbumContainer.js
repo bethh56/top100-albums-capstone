@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './SingleAlbumContainer.scss';
-import albumsData from '../../helpers/data/albumsData';
+import Comment from '../Comments/Comment';
+import smash from '../../helpers/data/smash';
 
 class SingleAlbumContainer extends React.Component {
   static propTypes = {
@@ -11,21 +12,27 @@ class SingleAlbumContainer extends React.Component {
 
   state = {
     album: {},
+    comment: [],
   }
 
-  componentDidMount() {
+  getSingleViewInfo = () => {
     const { albumId } = this.props;
-    albumsData.getSingleAlbum(albumId)
-      .then((request) => {
-        const album = request.data;
+    smash.getCommentByUidAndAlbumId(albumId)
+      .then((album) => {
         this.setState({ album });
       })
       .catch((err) => console.error('unable to display single album', err));
   }
 
+  componentDidMount() {
+    this.getSingleViewInfo();
+  }
+
   render() {
     const { viewSingleAlbum } = this.props;
-    const { album } = this.state;
+    const { album, comment } = this.state;
+
+    const viewComment = comment.map((readComment) => <Comment key={readComment.id} comment={readComment}/>);
 
     return (
       <div className="SingleAlbumContainer container">
@@ -39,6 +46,8 @@ class SingleAlbumContainer extends React.Component {
             <h3>Album Name: {album.albumName}</h3>
             <h3>Release Year: {album.releaseYear}</h3>
             <h3>Genre: {album.genre}</h3>
+            <button className="btn btn-dark mt-3">Add Comment</button>
+            {viewComment}
           </div>
         </div>
       </div>
