@@ -1,3 +1,15 @@
 .Auth {
   display: block;
 }
+
+.loginBtn {
+  background-color: #34AD58;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.loginBtn:hover {
+  background-color: #3abd61;
+}
