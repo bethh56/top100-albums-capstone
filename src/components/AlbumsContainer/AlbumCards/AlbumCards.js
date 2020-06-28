@@ -30,7 +30,7 @@ class AlbumCards extends React.Component {
       <div className="AlbumCards col-4 pb-3">
         {
           authed
-            ? <div className="card albumCard" style={{ border: haveListened ? '5px solid red' : '' }}>
+            ? <div className="card albumCard" style={{ border: haveListened ? '5px solid green' : '' }}>
              <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
               <div className="albumData" onClick={this.viewAlbum}>
                 <p>{album.albumName}</p>
