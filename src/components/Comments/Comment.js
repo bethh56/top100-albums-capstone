@@ -13,9 +13,9 @@ class Comment extends React.Component {
     const { comment } = this.props;
     const uid = authData.getUid();
     return (
-      <div className="Comments pt-3">
+      <div className="Comments">
         { uid === comment.uid
-          ? <p className="pt-3">{comment.comments}</p>
+          ? <p className="commentText">- {comment.comments} <button>Delete</button> </p>
           : ''
         }
       </div>
