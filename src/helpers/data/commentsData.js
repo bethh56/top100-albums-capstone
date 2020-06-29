@@ -20,4 +20,6 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getCommentsByAlbumId };
+const saveComment = (newComment) => axios.post(`${baseUrl}/comments.json`, newComment);
+
+export default { getCommentsByAlbumId, saveComment };
