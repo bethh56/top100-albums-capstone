@@ -8,7 +8,6 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
     .then((result) => {
       const allComments = result.data;
       const comments = [];
-      console.error(allComments);
       if (allComments !== null) {
         Object.keys(allComments).forEach((commentId) => {
           allComments[commentId].id = commentId;
@@ -20,4 +19,6 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default { getCommentsByAlbumId };
+const saveComment = (newComment) => axios.post(`${baseUrl}/comments.json`, newComment);
+
+export default { getCommentsByAlbumId, saveComment };

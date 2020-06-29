@@ -21,7 +21,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="MyNavbar">
         <nav className="navbar">
-          <h1 className="navbar-brand navFont">Top 100 Albums <i class="fas fa-record-vinyl"></i></h1>
+          <h1 className="navbar-brand navFont">Top 100 Albums <i className="fas fa-record-vinyl"></i></h1>
           {
             authed
               ? <button className="logout" onClick={this.logMeOut}>Logout</button>
