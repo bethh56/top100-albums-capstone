@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 import './SingleAlbumContainer.scss';
 import Comment from '../Comments/Comment';
-import smash from '../../helpers/data/smash';
+import commentsData from '../../helpers/data/commentsData';
+import albumsData from '../../helpers/data/albumsData';
 
 class SingleAlbumContainer extends React.Component {
   static propTypes = {
@@ -17,9 +18,12 @@ class SingleAlbumContainer extends React.Component {
 
   getSingleViewInfo = () => {
     const { albumId } = this.props;
-    smash.getCommentByUidAndAlbumId(albumId)
-      .then((album) => {
+    albumsData.getSingleAlbum(albumId)
+      .then((request) => {
+        const album = request.data;
         this.setState({ album });
+        commentsData.getCommentsByAlbumId(albumId)
+          .then((comment) => this.setState({ comment }));
       })
       .catch((err) => console.error('unable to display single album', err));
   }
@@ -32,7 +36,7 @@ class SingleAlbumContainer extends React.Component {
     const { viewSingleAlbum } = this.props;
     const { album, comment } = this.state;
 
-    const viewComment = comment.map((readComment) => <Comment key={readComment.id} comment={readComment}/>);
+    const viewComment = comment.map((readComment) => <Comment key={readComment.id} comment={readComment} album={album}/>);
 
     return (
       <div className="SingleAlbumContainer container">

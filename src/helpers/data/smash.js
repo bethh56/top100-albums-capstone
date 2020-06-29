@@ -15,7 +15,7 @@ const getCommentByUidAndAlbumId = (commentId) => new Promise((resolve, reject) =
             const album = allAlbums.find((x) => x.id === albumComment.albumId);
             comment.album.push(album);
           });
-          resolve(comment);
+          reject(comment);
         });
       });
     });

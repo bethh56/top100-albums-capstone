@@ -20,20 +20,4 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const getCommentsByUid = (uid) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/comments.json?orderBy="uid"&equalTo="${uid}"`)
-    .then((response) => {
-      const allComments = response.data;
-      const comments = [];
-      if (allComments !== null) {
-        Object.keys(allComments).forEach((commentId) => {
-          allComments[commentId].id = commentId;
-          comments.push(allComments[commentId]);
-        });
-      }
-      resolve(comments);
-    })
-    .catch((error) => reject(error));
-});
-
-export default { getCommentsByAlbumId, getCommentsByUid };
+export default { getCommentsByAlbumId };
