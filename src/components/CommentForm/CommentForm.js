@@ -27,11 +27,8 @@ class CommentForm extends React.Component {
 
   render() {
     const { commentText } = this.state;
-    const { album } = this.props;
-
-    console.error(album);
     return (
-      <div>
+      <div className="CommentForm">
         <form>
         <div className="form-group">
           <label htmlFor="commentArea"></label>
@@ -44,7 +41,7 @@ class CommentForm extends React.Component {
           onChange={this.commentAdd}
           ></textarea>
         </div>
-        <button className="btn btn-dark" onClick={this.submitComment}>Save Comment</button>
+        <button className="formSaveBtn" onClick={this.submitComment}>Save Comment</button>
         </form>
       </div>
     );

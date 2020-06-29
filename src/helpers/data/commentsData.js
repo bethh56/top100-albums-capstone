@@ -8,7 +8,6 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
     .then((result) => {
       const allComments = result.data;
       const comments = [];
-      console.error(allComments);
       if (allComments !== null) {
         Object.keys(allComments).forEach((commentId) => {
           allComments[commentId].id = commentId;
