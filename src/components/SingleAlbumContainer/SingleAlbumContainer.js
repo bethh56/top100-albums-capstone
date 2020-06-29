@@ -61,7 +61,7 @@ class SingleAlbumContainer extends React.Component {
             <h4>{album.albumName} ({album.releaseYear}) </h4>
             <h5>Genre: {album.genre}</h5>
             <button className="btn btn-dark mt-3" onClick={() => this.setState({ formOpen: true })}>Add Comment</button>
-            { formOpen ? <CommentForm addComment={this.addComment} albumId={albumId} comment={comment}/> : ''}
+            { formOpen ? <CommentForm addComment={this.addComment} albumId={albumId} /> : ''}
             {viewComment}
           </div>
         </div>
