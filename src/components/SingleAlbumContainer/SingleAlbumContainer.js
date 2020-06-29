@@ -64,7 +64,7 @@ class SingleAlbumContainer extends React.Component {
             <h4>Comment Section</h4>
             <button className="btn btn-dark addCommentBtn" onClick={() => this.setState({ formOpen: true })}>Add Comment</button>
             </div>
-            { formOpen ? <CommentForm addComment={this.addComment} albumId={albumId} /> : ''}
+            { formOpen ? <CommentForm addComment={this.addComment} albumId={albumId} formOpen={formOpen}/> : ''}
             {viewComment}
           </div>
         </div>
