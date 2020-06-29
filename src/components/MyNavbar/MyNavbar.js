@@ -19,12 +19,12 @@ class MyNavbar extends React.Component {
     const { authed } = this.props;
 
     return (
-      <div>
-        <nav className="navbar navbar-light bg-light">
-          <h1 className="navbar-brand">Top 100 Albums</h1>
+      <div className="MyNavbar">
+        <nav className="navbar">
+          <h1 className="navbar-brand navFont">Top 100 Albums <i class="fas fa-record-vinyl"></i></h1>
           {
             authed
-              ? <button className="btn btn-dark" onClick={this.logMeOut}>Logout</button>
+              ? <button className="logout" onClick={this.logMeOut}>Logout</button>
               : ''
           }
         </nav>

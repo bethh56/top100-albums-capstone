@@ -29,7 +29,7 @@ class Auth extends React.Component {
 
     return (
       <div className="Auth container mt-3">
-        <button className="btn btn-dark mb-3" onClick={this.loginClickEvent}>Login with Google</button>
+        <button className="loginBtn" onClick={this.loginClickEvent}>Login with Google</button>
         <div className="d-flex flex-wrap">
         { displayAlbumsLoggedOut }
         </div>

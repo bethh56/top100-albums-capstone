@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+
 .MyNavbar {
-  display: block;
+  background-color: #F6F4F4;
+  border-bottom: solid 5px #81D99C;
+  font-family: 'Cairo', sans-serif;
+}
+
+.navFont {
+  font-size: 1.75em
+}
+
+.logout {
+  background-color: #313A49;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 5px;
+  color: #F6F4F4,
+}
+
+.logout:hover {
+  background-color: #414D62,
 }

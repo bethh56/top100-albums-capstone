@@ -36,16 +36,15 @@ class SingleAlbumContainer extends React.Component {
 
     return (
       <div className="SingleAlbumContainer container">
-        <button className="btn btn-danger" onClick={() => { viewSingleAlbum(''); }}>X</button>
+        <button className="returnToHome" onClick={() => { viewSingleAlbum(''); }}>Return to Home</button>
         <div className="row">
-          <div className="col-sm-6">
-            <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
+          <div className="col-md-4">
+            <img className="card-img-top SingleAlbumImage" src={album.albumImage} alt=""/>
           </div>
-          <div className="col-sm-6">
-            <h3>Band Name: {album.bandName}</h3>
-            <h3>Album Name: {album.albumName}</h3>
-            <h3>Release Year: {album.releaseYear}</h3>
-            <h3>Genre: {album.genre}</h3>
+          <div className="col-md-8 singleAlbumData pt-2">
+            <h3>{album.bandName}</h3>
+            <h4>{album.albumName} ({album.releaseYear}) </h4>
+            <h5>Genre: {album.genre}</h5>
             <button className="btn btn-dark mt-3">Add Comment</button>
             {viewComment}
           </div>

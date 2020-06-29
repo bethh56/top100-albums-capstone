@@ -30,8 +30,7 @@ class AlbumsContainer extends React.Component {
 
     return (
       <div className="AlbumsContainer container">
-        <h1>Top 100 Albums</h1>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap pt-4">
         { displayAlbums }
         </div>
       </div>
