@@ -24,19 +24,17 @@ class AlbumCards extends React.Component {
             ? <div className="card albumCard" onClick={this.viewAlbum}>
              <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
               <div className="albumData">
-                <p>{album.albumName}</p>
-                <p>{album.bandName}</p>
-                <p>{album.releaseYear}</p>
-                <p>{album.genre}</p>
+                <p className="albumName mt-2">{album.albumName}  ({album.releaseYear})</p>
+                <p>By: {album.bandName}</p>
+                <p>Genre: {album.genre}</p>
             </div>
           </div>
             : <div className="card albumCard">
               <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
                 <div className="albumData">
-                  <p>{album.albumName}</p>
-                  <p>{album.bandName}</p>
-                  <p>{album.releaseYear}</p>
-                  <p>{album.genre}</p>
+                <p className="albumName mt-2">{album.albumName}  ({album.releaseYear})</p>
+                <p>By: {album.bandName}</p>
+                <p>Genre: {album.genre}</p>
                 </div>
               </div>
         }
