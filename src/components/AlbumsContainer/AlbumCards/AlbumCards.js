@@ -30,16 +30,15 @@ class AlbumCards extends React.Component {
       <div className="AlbumCards col-4 pb-3">
         {
           authed
-            ? <div className="card albumCard" style={{ border: haveListened ? '5px solid green' : '' }}>
+            ? <div className="card albumCard" style={{ border: haveListened ? '0.5vw solid #72D58F' : '' }}>
              <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
-              <div className="albumData" onClick={this.viewAlbum}>
-                <p>{album.albumName}</p>
-                <p>{album.bandName}</p>
-                <p>{album.releaseYear}</p>
-                <p>{album.genre}</p>
+                <div className="albumData" onClick={this.viewAlbum}>
+                <p className="albumName mt-2">{album.albumName}  ({album.releaseYear})</p>
+                <p>By: {album.bandName}</p>
+                <p>Genre: {album.genre}</p>
             </div>
             <div className="albumDataFooter">
-            <label className="mr-1"> Have you listened to this album?</label>
+            <label className="mr-1"> Listened to Album</label>
                 <input
                   type="checkbox"
                   checked={haveListened}
@@ -51,10 +50,9 @@ class AlbumCards extends React.Component {
             : <div className="card albumCard">
               <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
                 <div className="albumData">
-                  <p>{album.albumName}</p>
-                  <p>{album.bandName}</p>
-                  <p>{album.releaseYear}</p>
-                  <p>{album.genre}</p>
+                <p className="albumName mt-2">{album.albumName}  ({album.releaseYear})</p>
+                <p>By: {album.bandName}</p>
+                <p>Genre: {album.genre}</p>
                 </div>
               </div>
         }
