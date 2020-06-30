@@ -43,11 +43,17 @@ class SingleAlbumContainer extends React.Component {
       .catch((err) => console.error('could not save new comment', err));
   }
 
+  removeComment = (commentId) => {
+    commentsData.deleteComment(commentId)
+      .then(() => { this.getSingleViewInfo(); })
+      .catch((err) => console.error('can not delete comment', err));
+  }
+
   render() {
     const { viewSingleAlbum, albumId } = this.props;
     const { album, comment, formOpen } = this.state;
 
-    const viewComment = comment.map((readComment) => <Comment key={readComment.id} comment={readComment} album={album}/>);
+    const viewComment = comment.map((readComment) => <Comment key={readComment.id} comment={readComment} album={album} removeComment={this.removeComment}/>);
 
     return (
       <div className="SingleAlbumContainer container">
