@@ -1,11 +1,11 @@
 {
   "comments1" : {
-    "uid" : "uid329749",
+    "uid" : "SGSGqsmGKpdCpc7AAG3BPVN81xm2",
     "albumId" : "album1",
     "comments" : "This album is great!"
   },
   "comments2" : {
-    "uid" : "uid329749",
+    "uid" : "SGSGqsmGKpdCpc7AAG3BPVN81xm2",
     "albumId" : "album10",
     "comments" : "Did not like this one"
   },
@@ -20,7 +20,7 @@
     "comments" : "I like this album"
   },
   "comments5" : {
-    "uid" : "uid329749",
+    "uid" : "SGSGqsmGKpdCpc7AAG3BPVN81xm2",
     "albumId" : "album100",
     "comments" : "This album is way too long. "
   },
@@ -35,7 +35,7 @@
     "comments" : "Best album by this band I have listened to yet"
   },
   "comments8" : {
-    "uid" : "uid329749",
+    "uid" : "SGSGqsmGKpdCpc7AAG3BPVN81xm2",
     "albumId" : "album2",
     "comments" : "Neat"
   },
@@ -45,7 +45,7 @@
     "comments" : "Cool"
   },
   "comments10" : {
-    "uid" : "uid329749",
+    "uid" : "SGSGqsmGKpdCpc7AAG3BPVN81xm2",
     "albumId" : "album11",
     "comments" : "Not sure how this one made it into the count"
   }

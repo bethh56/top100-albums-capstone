@@ -1,0 +1,23 @@
+.Comments {
+  display: block;
+  margin-top: 10px;
+}
+
+.commentText {
+  margin: 0;
+  font-size: 18px;
+}
+
+.deleteCommentBtn {
+  border-radius: 5px;
+  border: solid 0.5px #E11439;
+  color: #E11439;
+  background-color: #F6F4F4;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.deleteCommentBtn:hover {
+  background-color: #E3DDDD;
+}

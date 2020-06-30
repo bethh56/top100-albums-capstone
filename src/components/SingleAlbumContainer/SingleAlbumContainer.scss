@@ -9,6 +9,7 @@
   border-radius: 5px;
   color: #F6F4F4;
   margin: 10px 0px;
+  margin-bottom: 30px;
 }
 
 .returnToHome:hover {
@@ -25,3 +26,23 @@
   color: #F6F4F4;
   text-align: left;
 }
+
+.commentSectionTitle {
+  text-align: center;
+  margin-top: 13vh;
+}
+
+.addCommentBtn {
+  background-color: #DD614A;
+  border: 0;
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: #F6F4F4;
+  margin: 0px, 20px;
+}
+
+.addCommentBtn:hover {
+  background-color: #f36951;
+}
+
+
