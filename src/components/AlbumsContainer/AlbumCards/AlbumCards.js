@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import albumShape from '../../../helpers/propz/albumShape';
+import authData from '../../../helpers/data/authData';
 import './AlbumCards.scss';
 
 class AlbumCards extends React.Component {
@@ -10,6 +12,7 @@ class AlbumCards extends React.Component {
 
    static propTypes = {
      album: albumShape.albumShape,
+     userAlbum: PropTypes.func.isRequired,
    }
 
   viewAlbum = (e) => {
@@ -20,6 +23,19 @@ class AlbumCards extends React.Component {
 
   haveListenedCheckbox = (e) => {
     this.setState({ haveListened: e.target.checked });
+  }
+
+  updateAlbumListenStatus = (e) => {
+    e.preventDefault();
+    const { album, addToUserAlbum } = this.props;
+    const { haveListened } = this.state;
+    if (haveListened) {
+      const updateListen = {
+        albumId: album.id,
+        uid: authData.getUid(),
+      };
+      addToUserAlbum(album.id, updateListen);
+    }
   }
 
   render() {
