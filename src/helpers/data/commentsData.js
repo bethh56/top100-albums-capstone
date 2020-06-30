@@ -21,4 +21,6 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
 
 const saveComment = (newComment) => axios.post(`${baseUrl}/comments.json`, newComment);
 
-export default { getCommentsByAlbumId, saveComment };
+const deleteComment = (commentId) => axios.delete(`${baseUrl}/comments/${commentId}.json`);
+
+export default { getCommentsByAlbumId, saveComment, deleteComment };
