@@ -16,7 +16,7 @@ class Comment extends React.Component {
     return (
       <div className="Comments">
         { uid === comment.uid
-          ? <p className="commentText">- {comment.comments} <button className="btn btn-danger" onClick={this.deleteComment}>X</button> </p>
+          ? <p className="commentText"> <button className="deleteCommentBtn" onClick={this.deleteComment}>X</button> {comment.comments}</p>
           : ''
         }
       </div>
