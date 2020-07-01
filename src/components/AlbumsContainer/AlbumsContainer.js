@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 
 import AlbumCards from './AlbumCards/AlbumCards';
 import albumsData from '../../helpers/data/albumsData';
+import authData from '../../helpers/data/authData';
 
 import './AlbumsContainer.scss';
+import userAlbumsData from '../../helpers/data/userAlbumsData';
+import smash from '../../helpers/data/smash';
 
 class AlbumsContainer extends React.Component {
   static propTypes = {
@@ -14,19 +17,63 @@ class AlbumsContainer extends React.Component {
 
   state = {
     albums: [],
+    userAlbums: [],
   }
 
-  componentDidMount() {
-    albumsData.getAlbums()
+  getAllAlbums = () => {
+    const uid = authData.getUid();
+    smash.getAlbumsWithUserInfo(uid)
       .then((albums) => this.setState({ albums }))
       .catch((err) => console.error('unable to display albums', err));
   }
 
+  // getUserAlbums = () => {
+  //   const { albumId } = this.props;
+  //   albumsData.getSingleAlbum(albumId)
+  //     .then((request) => {
+  //       const album = request.data;
+  //       console.error(album);
+  //       this.setState({ album });
+  //       userAlbumsData.getUserAlbumsByAlbumId(albumId)
+  //         .then((userAlbums) => this.setState({ userAlbums }))
+  //         .catch((err) => console.error('unable to get user albums'));
+  //     });
+  // }
+
+  componentDidMount() {
+    this.getAllAlbums();
+    // this.getUserAlbums();
+  }
+
+  addToUserAlbum = (newListen) => {
+    userAlbumsData.saveListenedAlbum(newListen)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to update user album', err));
+  }
+
+  deleteUserAlbum = (userAlbumId) => {
+    userAlbumsData.deleteListenedAlbum(userAlbumId)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to remove user album', err));
+  }
+
   render() {
-    const { albums } = this.state;
+    const { albums, userAlbums } = this.state;
     const { viewSingleAlbum, authed } = this.props;
 
-    const displayAlbums = albums.map((album) => <AlbumCards key={album.id} album={album} viewSingleAlbum={viewSingleAlbum} authed={authed}/>);
+    const displayAlbums = albums.map((album) => <AlbumCards
+    key={album.id}
+    album={album}
+    viewSingleAlbum={viewSingleAlbum}
+    authed={authed}
+    userAlbums={userAlbums}
+    addToUserAlbum={this.addToUserAlbum}
+    deleteUserAlbum={this.deleteUserAlbum}
+    />);
 
     return (
       <div className="AlbumsContainer container">
