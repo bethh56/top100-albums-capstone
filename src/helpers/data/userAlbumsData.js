@@ -3,11 +3,12 @@ import apiKeys from '../apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
-const getUserAlbumsByUid = (uid) => new Promise((resolve, reject) => {
+const getAllUserAlbums = (uid) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/userAlbums.json?orderBy="uid"&equalTo="${uid}"`)
     .then((result) => {
       const allUserAlbums = result.data;
       const userAlbums = [];
+      console.error(allUserAlbums);
       if (allUserAlbums !== null) {
         Object.keys(allUserAlbums).forEach((userAlbumId) => {
           const newUserAlbum = allUserAlbums[userAlbumId];
@@ -20,6 +21,8 @@ const getUserAlbumsByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-const haveListenedToAlbum = (albumId, updateListen) => axios.put(`${baseUrl}/userAlbums/${albumId}.json`, updateListen);
+const saveListenedAlbum = (newListen) => axios.post(`${baseUrl}/userAlbums.json`, newListen);
 
-export default { haveListenedToAlbum, getUserAlbumsByUid };
+const deleteListenedAlbum = (userAlbumId) => axios.delete(`${baseUrl}/userAlbums${userAlbumId}.json`);
+
+export default { saveListenedAlbum, getAllUserAlbums, deleteListenedAlbum };

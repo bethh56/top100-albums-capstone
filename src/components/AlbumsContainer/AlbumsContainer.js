@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 import AlbumCards from './AlbumCards/AlbumCards';
 import albumsData from '../../helpers/data/albumsData';
+import authData from '../../helpers/data/authData';
 
 import './AlbumsContainer.scss';
 import userAlbumsData from '../../helpers/data/userAlbumsData';
+import smash from '../../helpers/data/smash';
 
 class AlbumsContainer extends React.Component {
   static propTypes = {
@@ -19,32 +21,40 @@ class AlbumsContainer extends React.Component {
   }
 
   getAllAlbums = () => {
-    albumsData.getAlbums()
+    const uid = authData.getUid();
+    smash.getAlbumsWithUserInfo(uid)
       .then((albums) => this.setState({ albums }))
       .catch((err) => console.error('unable to display albums', err));
   }
 
-  getUserAlbums = () => {
-    userAlbumsData.getUserAlbumsByUid()
-      .then((userAlbums) => this.setState({ userAlbums }))
-      .catch((err) => console.error('unable to get user albums'));
-  }
+  // getUserAlbums = () => {
+  //   const { albumId } = this.props;
+  //   albumsData.getSingleAlbum(albumId)
+  //     .then((request) => {
+  //       const album = request.data;
+  //       console.error(album);
+  //       this.setState({ album });
+  //       userAlbumsData.getUserAlbumsByAlbumId(albumId)
+  //         .then((userAlbums) => this.setState({ userAlbums }))
+  //         .catch((err) => console.error('unable to get user albums'));
+  //     });
+  // }
 
   componentDidMount() {
     this.getAllAlbums();
-    this.getUserAlbums();
+    // this.getUserAlbums();
   }
 
-  addToUserAlbum = (albumId, updateListen) => {
-    userAlbumsData.haveListenedToAlbum(albumId, updateListen)
+  addToUserAlbum = (newListen) => {
+    userAlbumsData.saveListenedAlbum(newListen)
       .then(() => {
-        this.getUserAlbums();
+        this.getAllAlbums();
       })
       .catch((err) => console.error('unable to update user album', err));
   }
 
   render() {
-    const { albums } = this.state;
+    const { albums, userAlbums } = this.state;
     const { viewSingleAlbum, authed } = this.props;
 
     const displayAlbums = albums.map((album) => <AlbumCards
@@ -52,6 +62,8 @@ class AlbumsContainer extends React.Component {
     album={album}
     viewSingleAlbum={viewSingleAlbum}
     authed={authed}
+    userAlbums={userAlbums}
+    addToUserAlbum={this.addToUserAlbum}
     />);
 
     return (
