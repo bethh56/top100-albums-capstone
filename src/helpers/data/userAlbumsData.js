@@ -23,6 +23,6 @@ const getAllUserAlbums = (uid) => new Promise((resolve, reject) => {
 
 const saveListenedAlbum = (newListen) => axios.post(`${baseUrl}/userAlbums.json`, newListen);
 
-const deleteListenedAlbum = (userAlbumId) => axios.delete(`${baseUrl}/userAlbums${userAlbumId}.json`);
+const deleteListenedAlbum = (userAlbumId) => axios.delete(`${baseUrl}/userAlbums/${userAlbumId}.json`);
 
 export default { saveListenedAlbum, getAllUserAlbums, deleteListenedAlbum };

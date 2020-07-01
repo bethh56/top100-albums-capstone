@@ -17,14 +17,17 @@ class AlbumCards extends React.Component {
 
   updateAlbumListenStatus = (e) => {
     e.preventDefault();
-    const { addToUserAlbum, album } = this.props;
+    const { addToUserAlbum, album, deleteUserAlbum } = this.props;
     console.error(e.target.checked);
     if (e.target.checked) {
       const addListen = {
+        likes: false,
         albumId: album.id,
         uid: authData.getUid(),
       };
       addToUserAlbum(addListen);
+    } else {
+      deleteUserAlbum(album.userAlbum.id);
     }
   }
 

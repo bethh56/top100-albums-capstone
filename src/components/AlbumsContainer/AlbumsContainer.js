@@ -53,6 +53,14 @@ class AlbumsContainer extends React.Component {
       .catch((err) => console.error('unable to update user album', err));
   }
 
+  deleteUserAlbum = (userAlbumId) => {
+    userAlbumsData.deleteListenedAlbum(userAlbumId)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to remove user album', err));
+  }
+
   render() {
     const { albums, userAlbums } = this.state;
     const { viewSingleAlbum, authed } = this.props;
@@ -64,6 +72,7 @@ class AlbumsContainer extends React.Component {
     authed={authed}
     userAlbums={userAlbums}
     addToUserAlbum={this.addToUserAlbum}
+    deleteUserAlbum={this.deleteUserAlbum}
     />);
 
     return (
