@@ -35,22 +35,41 @@ class AlbumCards extends React.Component {
     }
   }
 
-  updateLikes = (e) => {
+  like = (e) => {
     e.preventDefault();
     const { album, updateUserAlbumLike } = this.props;
     console.error(album.userAlbum.likes);
     const likeAlbum = {
-      likes: album.userAlbum.likes,
+      likes: true,
       albumId: album.id,
       uid: authData.getUid(),
     };
     updateUserAlbumLike(album.id, likeAlbum);
   }
 
+  dislike = (e) => {
+    e.preventDefault();
+    const { album, updateUserAlbumLike } = this.props;
+    console.error(album.userAlbum.likes);
+    const likeAlbum = {
+      likes: false,
+      albumId: album.id,
+      uid: authData.getUid(),
+    };
+    updateUserAlbumLike(album.id, likeAlbum);
+  }
+
+  likeButtons = () => {
+    const { album } = this.props;
+    if (album.haveListened === true) {
+      if (album.userAlbum.likes === true) {
+        return <button className="unlikeAlbum" onClick={this.dislike}>Unlike <i className="fa fa-thumbs-down"></i></button>;
+      } return <button className="likeAlbum" onClick={this.like}>Like <i className="fa fa-heart"></i></button>;
+    }
+  };
+
   render() {
     const { album, authed } = this.props;
-    const { likes } = this.state;
-
     return (
       <div className="AlbumCards col-4 pb-3">
         {
@@ -71,7 +90,7 @@ class AlbumCards extends React.Component {
                   onChange={this.updateAlbumListenStatus}
                 />
             </div>
-             <button className="likeAlbum" onClick={this.updateLikes}><i className="fa fa-heart"></i></button>
+            {this.likeButtons()}
           </div>
             : <div className="card albumCard">
               <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
@@ -85,6 +104,6 @@ class AlbumCards extends React.Component {
        </div>
     );
   }
-}
+};
 
 export default AlbumCards;

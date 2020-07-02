@@ -78,8 +78,20 @@ p {
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
   color: #E11439;
-  font-size: 3.40vw;
-  -webkit-text-stroke: 2px #313A49;
+  font-size: 20px;
+  outline: 0 !important;
+}
+
+.unlikeAlbum {
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  bottom: 7px;
+  right: 9px;
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 0;
+  color: #E11439;
+  font-size: 20px;
   outline: 0 !important;
 }
 
@@ -87,6 +99,14 @@ p {
   opacity: 1;
 }
 
+.albumCard:hover .unlikeAlbum {
+  opacity: 1;
+}
+
 .likeAlbum:hover {
+  color: #ff4768;
+}
+
+.unlikeAlbum:hover {
   color: #ff4768;
 }

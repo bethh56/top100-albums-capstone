@@ -10,6 +10,7 @@ const getAlbumsWithUserInfo = (uid) => new Promise((resolve, reject) => {
           albums.forEach((album) => {
             const newAlbum = { ...album };
             const selectedUserAlbum = userAlbums.find((x) => x.albumId === album.id);
+            console.error(selectedUserAlbum);
             if (selectedUserAlbum !== undefined) {
               newAlbum.haveListened = true;
               newAlbum.userAlbum = selectedUserAlbum;
