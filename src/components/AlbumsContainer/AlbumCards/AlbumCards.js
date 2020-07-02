@@ -5,6 +5,10 @@ import authData from '../../../helpers/data/authData';
 import './AlbumCards.scss';
 
 class AlbumCards extends React.Component {
+  state = {
+    likes: false,
+  }
+
    static propTypes = {
      album: albumShape.albumShape,
    }
@@ -33,10 +37,10 @@ class AlbumCards extends React.Component {
 
   updateLikes = (e) => {
     e.preventDefault();
-    console.error(e.target.checked);
     const { album, updateUserAlbumLike } = this.props;
+    console.error(album.userAlbum.likes);
     const likeAlbum = {
-      likes: true,
+      likes: album.userAlbum.likes,
       albumId: album.id,
       uid: authData.getUid(),
     };
@@ -45,6 +49,7 @@ class AlbumCards extends React.Component {
 
   render() {
     const { album, authed } = this.props;
+    const { likes } = this.state;
 
     return (
       <div className="AlbumCards col-4 pb-3">
@@ -65,15 +70,8 @@ class AlbumCards extends React.Component {
                   id="haveListenedToAlbum"
                   onChange={this.updateAlbumListenStatus}
                 />
-                <label className="mr-1"> Likes Album </label>
-                <input
-                  type="checkbox"
-                  checked={album.selectedUserAlbum}
-                  id="likesAlbum"
-                  onChange={this.updateLikes}
-                />
             </div>
-            <button className="likeAlbum"><i className="fa fa-heart"></i></button>
+             <button className="likeAlbum" onClick={this.updateLikes}><i className="fa fa-heart"></i></button>
           </div>
             : <div className="card albumCard">
               <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
