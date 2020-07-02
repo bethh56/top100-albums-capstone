@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import AlbumCards from './AlbumCards/AlbumCards';
-import albumsData from '../../helpers/data/albumsData';
 import authData from '../../helpers/data/authData';
 
 import './AlbumsContainer.scss';
@@ -27,22 +26,8 @@ class AlbumsContainer extends React.Component {
       .catch((err) => console.error('unable to display albums', err));
   }
 
-  // getUserAlbums = () => {
-  //   const { albumId } = this.props;
-  //   albumsData.getSingleAlbum(albumId)
-  //     .then((request) => {
-  //       const album = request.data;
-  //       console.error(album);
-  //       this.setState({ album });
-  //       userAlbumsData.getUserAlbumsByAlbumId(albumId)
-  //         .then((userAlbums) => this.setState({ userAlbums }))
-  //         .catch((err) => console.error('unable to get user albums'));
-  //     });
-  // }
-
   componentDidMount() {
     this.getAllAlbums();
-    // this.getUserAlbums();
   }
 
   addToUserAlbum = (newListen) => {
@@ -61,6 +46,14 @@ class AlbumsContainer extends React.Component {
       .catch((err) => console.error('unable to remove user album', err));
   }
 
+  updateUserAlbumLike = (userAlbumId, like) => {
+    userAlbumsData.updatedLikeOnUserAlbum(userAlbumId, like)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to like user album', err));
+  }
+
   render() {
     const { albums, userAlbums } = this.state;
     const { viewSingleAlbum, authed } = this.props;
@@ -73,6 +66,7 @@ class AlbumsContainer extends React.Component {
     userAlbums={userAlbums}
     addToUserAlbum={this.addToUserAlbum}
     deleteUserAlbum={this.deleteUserAlbum}
+    updateUserAlbumLike={this.updateUserAlbumLike}
     />);
 
     return (

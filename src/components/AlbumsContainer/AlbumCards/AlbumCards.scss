@@ -17,24 +17,26 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  bottom: 0;
   text-align: center;
+  margin: 35px 0px;
 }
 
 .albumDataFooter {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 1.75vw;
+  font-size: 17px;
+  margin-top: 5px;
 }
 
 .albumCard:hover .albumImage {
-  opacity: 0.2;
+  opacity: 0.15;
 }
 
 .albumCard:hover .albumData {
@@ -47,10 +49,44 @@
 
 p {
   margin: 0;
-  font-size: 2vw;
+  padding: 0;
+}
+
+.bandName {
+  font-weight: 500;
+  font-size: 19px;
 }
 
 .albumName {
-  font-weight: 600;
-  padding: 0px 4px;
+  font-weight: 630;
+  padding: 0px 1px;
+  font-size: 27px;
+}
+
+.genre {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.likeAlbum {
+  border-radius: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  position: absolute;
+  bottom: 7px;
+  right: 9px;
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 0;
+  color: #E11439;
+  font-size: 3.40vw;
+  -webkit-text-stroke: 2px #313A49;
+  outline: 0 !important;
+}
+
+.albumCard:hover .likeAlbum {
+  opacity: 1;
+}
+
+.likeAlbum:hover {
+  color: #ff4768;
 }

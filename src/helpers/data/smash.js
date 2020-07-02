@@ -13,6 +13,7 @@ const getAlbumsWithUserInfo = (uid) => new Promise((resolve, reject) => {
             if (selectedUserAlbum !== undefined) {
               newAlbum.haveListened = true;
               newAlbum.userAlbum = selectedUserAlbum;
+              console.error(selectedUserAlbum);
             } else {
               newAlbum.haveListened = false;
               newAlbum.userAlbum = { likes: false };
