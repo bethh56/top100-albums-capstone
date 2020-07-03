@@ -38,24 +38,25 @@ class AlbumCards extends React.Component {
   like = (e) => {
     e.preventDefault();
     const { album, updateUserAlbumLike } = this.props;
+    console.error(album.userAlbum.id);
     const likeAlbum = {
       likes: true,
-      albumId: album.id,
+      albumId: album.userAlbum.albumId,
       uid: authData.getUid(),
     };
-    updateUserAlbumLike(album.id, likeAlbum);
+    updateUserAlbumLike(album.userAlbum.id, likeAlbum);
   }
 
   dislike = (e) => {
     e.preventDefault();
     const { album, updateUserAlbumLike } = this.props;
-    console.error(album.haveListened);
+    console.error(album.userAlbum.id);
     const likeAlbum = {
       likes: false,
-      albumId: album.id,
+      albumId: album.userAlbum.albumId,
       uid: authData.getUid(),
     };
-    updateUserAlbumLike(album.id, likeAlbum);
+    updateUserAlbumLike(album.userAlbum.id, likeAlbum);
   }
 
   likeButtons = (e) => {
