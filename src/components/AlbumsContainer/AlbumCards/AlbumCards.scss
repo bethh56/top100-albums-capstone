@@ -111,3 +111,17 @@ p {
 .unlikeAlbum:hover {
   color: #fb1b4491;
 }
+
+.iconOnAlbum {
+  opacity: 1;
+  transition: .4s ease;
+  bottom: 8px;
+  right: 15px;
+  position: absolute;
+  color: #E11439;
+  font-size: 30px;
+}
+
+.albumCard:hover .iconOnAlbum {
+  opacity: 0;
+}

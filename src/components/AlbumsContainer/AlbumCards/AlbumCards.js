@@ -67,6 +67,17 @@ class AlbumCards extends React.Component {
     return '';
   }
 
+  likeIconOnAlbum = (e) => {
+    const { album } = this.props;
+    if (album.haveListened === true) {
+      if (album.userAlbum.likes === true) {
+        return '';
+      }
+      return <p className="iconOnAlbum"><i className="fa fa-heart"></i></p>;
+    }
+    return '';
+  }
+
   render() {
     const { album, authed } = this.props;
     return (
@@ -89,6 +100,7 @@ class AlbumCards extends React.Component {
                   onChange={this.updateAlbumListenStatus}
                 />
             </div>
+            {this.likeIconOnAlbum()}
             {this.likeButtons()}
           </div>
             : <div className="card albumCard">
