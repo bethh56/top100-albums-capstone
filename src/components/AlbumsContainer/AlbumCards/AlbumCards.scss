@@ -68,7 +68,7 @@ p {
   font-size: 17px;
 }
 
-.likeAlbum {
+.unlikeAlbum {
   border-radius: 50%;
   opacity: 0;
   transition: .5s ease;
@@ -82,7 +82,7 @@ p {
   outline: 0 !important;
 }
 
-.unlikeAlbum {
+.likeAlbum {
   opacity: 0;
   transition: .5s ease;
   position: absolute;
@@ -90,7 +90,7 @@ p {
   right: 9px;
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
-  color: white;
+  color: rgba(255, 255, 255, 0.11);
   font-size: 30px;
   outline: 0 !important;
   -webkit-text-stroke: 2px #E11439;
@@ -119,7 +119,8 @@ p {
   right: 15px;
   position: absolute;
   color: #E11439;
-  font-size: 30px;
+  font-size: 33px;
+  -webkit-text-stroke: 2px #F6F4F4;
 }
 
 .albumCard:hover .iconOnAlbum {

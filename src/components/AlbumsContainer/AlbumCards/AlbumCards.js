@@ -71,9 +71,9 @@ class AlbumCards extends React.Component {
     const { album } = this.props;
     if (album.haveListened === true) {
       if (album.userAlbum.likes === true) {
-        return '';
+        return <p className="iconOnAlbum"><i className="fa fa-heart"></i></p>;
       }
-      return <p className="iconOnAlbum"><i className="fa fa-heart"></i></p>;
+      return '';
     }
     return '';
   }
