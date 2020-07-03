@@ -8,7 +8,6 @@ const getAllUserAlbums = (uid) => new Promise((resolve, reject) => {
     .then((result) => {
       const allUserAlbums = result.data;
       const userAlbums = [];
-      console.error(allUserAlbums);
       if (allUserAlbums !== null) {
         Object.keys(allUserAlbums).forEach((userAlbumId) => {
           const newUserAlbum = allUserAlbums[userAlbumId];
@@ -25,4 +24,11 @@ const saveListenedAlbum = (newListen) => axios.post(`${baseUrl}/userAlbums.json`
 
 const deleteListenedAlbum = (userAlbumId) => axios.delete(`${baseUrl}/userAlbums/${userAlbumId}.json`);
 
-export default { saveListenedAlbum, getAllUserAlbums, deleteListenedAlbum };
+const updatedLikeOnUserAlbum = (userAlbumId, like) => axios.put(`${baseUrl}/userAlbums/${userAlbumId}.json`, like);
+
+export default {
+  saveListenedAlbum,
+  getAllUserAlbums,
+  deleteListenedAlbum,
+  updatedLikeOnUserAlbum,
+};
