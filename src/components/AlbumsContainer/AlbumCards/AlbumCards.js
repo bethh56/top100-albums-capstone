@@ -21,7 +21,6 @@ class AlbumCards extends React.Component {
 
   updateAlbumListenStatus = (e) => {
     e.preventDefault();
-    console.error(e.target.checked);
     const { addToUserAlbum, album, deleteUserAlbum } = this.props;
     if (e.target.checked) {
       const addListen = {
@@ -38,7 +37,6 @@ class AlbumCards extends React.Component {
   like = (e) => {
     e.preventDefault();
     const { album, updateUserAlbumLike } = this.props;
-    console.error(album.userAlbum.id);
     const likeAlbum = {
       likes: true,
       albumId: album.userAlbum.albumId,
@@ -50,7 +48,6 @@ class AlbumCards extends React.Component {
   dislike = (e) => {
     e.preventDefault();
     const { album, updateUserAlbumLike } = this.props;
-    console.error(album.userAlbum.id);
     const likeAlbum = {
       likes: false,
       albumId: album.userAlbum.albumId,
@@ -63,9 +60,9 @@ class AlbumCards extends React.Component {
     const { album } = this.props;
     if (album.haveListened === true) {
       if (album.userAlbum.likes === true) {
-        return <button className="unlikeAlbum" onClick={this.dislike}>Unlike <i className="fa fa-thumbs-down"></i></button>;
+        return <button className="unlikeAlbum" onClick={this.dislike}> <i className="fa fa-heart"></i></button>;
       }
-      return <button className="likeAlbum" onClick={this.like}>Like <i className="fa fa-heart"></i></button>;
+      return <button className="likeAlbum" onClick={this.like}> <i className="fa fa-heart"></i></button>;
     }
     return '';
   }

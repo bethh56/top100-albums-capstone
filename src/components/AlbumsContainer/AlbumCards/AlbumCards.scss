@@ -78,7 +78,7 @@ p {
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
   color: #E11439;
-  font-size: 20px;
+  font-size: 30px;
   outline: 0 !important;
 }
 
@@ -90,9 +90,10 @@ p {
   right: 9px;
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
-  color: #E11439;
-  font-size: 20px;
+  color: white;
+  font-size: 30px;
   outline: 0 !important;
+  -webkit-text-stroke: 2px #E11439;
 }
 
 .albumCard:hover .likeAlbum {
@@ -104,9 +105,9 @@ p {
 }
 
 .likeAlbum:hover {
-  color: #ff4768;
+  color: #ec33556c;
 }
 
 .unlikeAlbum:hover {
-  color: #ff4768;
+  color: #fb1b4491;
 }
