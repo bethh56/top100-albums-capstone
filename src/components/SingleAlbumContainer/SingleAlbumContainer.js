@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './SingleAlbumContainer.scss';
 import Comment from '../Comments/Comment';
 import commentsData from '../../helpers/data/commentsData';
+import userAlbumsData from '../../helpers/data/userAlbumsData';
 import albumsData from '../../helpers/data/albumsData';
 import CommentForm from '../CommentForm/CommentForm';
 
@@ -47,6 +48,30 @@ class SingleAlbumContainer extends React.Component {
     commentsData.deleteComment(commentId)
       .then(() => { this.getSingleViewInfo(); })
       .catch((err) => console.error('can not delete comment', err));
+  }
+
+  addToUserAlbum = (newListen) => {
+    userAlbumsData.saveListenedAlbum(newListen)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to update user album', err));
+  }
+
+  deleteUserAlbum = (userAlbumId) => {
+    userAlbumsData.deleteListenedAlbum(userAlbumId)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to remove user album', err));
+  }
+
+  updateUserAlbumLike = (userAlbumId, like) => {
+    userAlbumsData.updatedLikeOnUserAlbum(userAlbumId, like)
+      .then(() => {
+        this.getAllAlbums();
+      })
+      .catch((err) => console.error('unable to like user album', err));
   }
 
   render() {

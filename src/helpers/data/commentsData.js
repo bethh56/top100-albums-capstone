@@ -13,7 +13,7 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
           allComments[commentId].id = commentId;
         });
       }
-      console.error('resolve', comments);
+      resolve(comments);
     })
     .catch((error) => reject(error));
 });

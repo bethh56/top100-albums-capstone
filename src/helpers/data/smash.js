@@ -25,4 +25,28 @@ const getAlbumsWithUserInfo = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getAlbumsWithUserInfo };
+const getSingleAlbumsWithUserInfo = (uid) => new Promise((resolve, reject) => {
+  albumsData.getSingleAlbum()
+    .then((albums) => {
+      userAlbumsData.getAllUserAlbums(uid)
+        .then((userAlbums) => {
+          const finalAlbums = [];
+          albums.forEach((album) => {
+            const newAlbum = { ...album };
+            const selectedUserAlbum = userAlbums.find((x) => x.albumId === album.id);
+            if (selectedUserAlbum !== undefined) {
+              newAlbum.haveListened = true;
+              newAlbum.userAlbum = selectedUserAlbum;
+            } else {
+              newAlbum.haveListened = false;
+              newAlbum.userAlbum = { likes: false };
+            }
+            finalAlbums.push(newAlbum);
+          });
+          resolve(finalAlbums);
+        });
+    })
+    .catch((err) => reject(err));
+});
+
+export default { getAlbumsWithUserInfo, getSingleAlbumsWithUserInfo };
