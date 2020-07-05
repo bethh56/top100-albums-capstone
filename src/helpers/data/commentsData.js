@@ -1,5 +1,6 @@
 import axios from 'axios';
 import apiKeys from '../apiKeys.json';
+import authData from './authData';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -11,6 +12,9 @@ const getCommentsByAlbumId = (albumId) => new Promise((resolve, reject) => {
       if (allComments !== null) {
         Object.keys(allComments).forEach((commentId) => {
           allComments[commentId].id = commentId;
+          if (allComments[commentId].uid === authData.getUid()) {
+            comments.push(allComments[commentId]);
+          }
         });
       }
       resolve(comments);
