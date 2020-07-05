@@ -50,30 +50,6 @@ class SingleAlbumContainer extends React.Component {
       .catch((err) => console.error('can not delete comment', err));
   }
 
-  addToUserAlbum = (newListen) => {
-    userAlbumsData.saveListenedAlbum(newListen)
-      .then(() => {
-        this.getAllAlbums();
-      })
-      .catch((err) => console.error('unable to update user album', err));
-  }
-
-  deleteUserAlbum = (userAlbumId) => {
-    userAlbumsData.deleteListenedAlbum(userAlbumId)
-      .then(() => {
-        this.getAllAlbums();
-      })
-      .catch((err) => console.error('unable to remove user album', err));
-  }
-
-  updateUserAlbumLike = (userAlbumId, like) => {
-    userAlbumsData.updatedLikeOnUserAlbum(userAlbumId, like)
-      .then(() => {
-        this.getAllAlbums();
-      })
-      .catch((err) => console.error('unable to like user album', err));
-  }
-
   render() {
     const { viewSingleAlbum, albumId } = this.props;
     const { album, comment, formOpen } = this.state;
