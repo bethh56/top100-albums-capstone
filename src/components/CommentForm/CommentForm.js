@@ -27,6 +27,7 @@ class CommentForm extends React.Component {
 
   render() {
     const { commentText } = this.state;
+
     return (
       <div className="CommentForm">
         <form>

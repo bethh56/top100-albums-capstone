@@ -92,7 +92,7 @@ class AlbumCards extends React.Component {
                 <p className="genre">Genre: {album.genre}</p>
             </div>
             <div className="albumDataFooter">
-            <label className="mr-1"> Listened to Album</label>
+            <label> Listened to Album</label>
                 <input
                   type="checkbox"
                   checked={album.haveListened}
