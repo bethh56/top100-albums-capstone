@@ -1,5 +1,6 @@
 .AlbumCards {
   display: block;
+  margin: 0;
 }
 
 .albumImage {
@@ -15,12 +16,8 @@
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   text-align: center;
-  margin: 35px 0px;
+  margin-top: 17%;
 }
 
 .albumDataFooter {
@@ -31,8 +28,8 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-size: 17px;
-  margin-top: 5px;
+  font-size: 2vw;
+  margin-top: 0.5vh;
 }
 
 .albumCard:hover .albumImage {
@@ -54,18 +51,17 @@ p {
 
 .bandName {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 2vw;
 }
 
 .albumName {
   font-weight: 630;
-  padding: 0px 1px;
-  font-size: 27px;
+  font-size: 2.5vw;
 }
 
 .genre {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.5vw;
 }
 
 .unlikeAlbum {
@@ -78,7 +74,7 @@ p {
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
   color: #E11439;
-  font-size: 30px;
+  font-size: 2.5vw;
   outline: 0 !important;
 }
 
@@ -91,7 +87,7 @@ p {
   background-color: rgba(255, 255, 255, 0.01);
   border: 0;
   color: rgba(255, 255, 255, 0.11);
-  font-size: 30px;
+  font-size: 2.5vw;
   outline: 0 !important;
   -webkit-text-stroke: 2px #E11439;
 }
@@ -119,7 +115,7 @@ p {
   right: 15px;
   position: absolute;
   color: #E11439;
-  font-size: 33px;
+  font-size: 2.5vw;
   -webkit-text-stroke: 2px #F6F4F4;
 }
 
