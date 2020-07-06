@@ -59,7 +59,7 @@ class SingleAlbumContainer extends React.Component {
     return (
       <div className="SingleAlbumContainer container">
         <button className="returnToHome" onClick={() => { viewSingleAlbum(''); }}>Return to Home</button>
-        <div className="row singleCheckbox">
+        {/* <div className="row singleCheckbox">
           <div>
           <label className="mr-1"> Listened to Album </label>
                 <input
@@ -78,7 +78,7 @@ class SingleAlbumContainer extends React.Component {
                   onChange={this.updateAlbumListenStatus}
                 />
           </div>
-        </div>
+        </div> */}
         <div className="row">
           <div className="col-md-4">
             <img className="card-img-top SingleAlbumImage" src={album.albumImage} alt=""/>
