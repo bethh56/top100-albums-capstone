@@ -58,6 +58,8 @@ class AlbumsContainer extends React.Component {
     const { albums, userAlbums } = this.state;
     const { viewSingleAlbum, authed } = this.props;
 
+    albums.sort((a, b) => a.position - b.position);
+
     const displayAlbums = albums.map((album) => <AlbumCards
     key={album.id}
     album={album}

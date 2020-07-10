@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import './SingleAlbumContainer.scss';
 import Comment from '../Comments/Comment';
 import commentsData from '../../helpers/data/commentsData';
-import userAlbumsData from '../../helpers/data/userAlbumsData';
 import albumsData from '../../helpers/data/albumsData';
 import CommentForm from '../CommentForm/CommentForm';
 
