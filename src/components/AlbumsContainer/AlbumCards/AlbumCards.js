@@ -90,6 +90,7 @@ class AlbumCards extends React.Component {
                 <p className="bandName">{album.bandName}</p>
                 <p className="albumName">{album.albumName}  ({album.releaseYear})</p>
                 <p className="genre">Genre: {album.genre}</p>
+                <p className="genre">{album.position}</p>
             </div>
             <div className="albumDataFooter">
             <label> Listened to Album</label>
