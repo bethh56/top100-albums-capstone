@@ -25,6 +25,9 @@ class Auth extends React.Component {
 
   render() {
     const { albums } = this.state;
+
+    albums.sort((a, b) => a.position - b.position);
+
     const displayAlbumsLoggedOut = albums.map((album) => <AlbumCards key={album.id} album={album}/>);
 
     return (
