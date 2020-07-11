@@ -87,10 +87,9 @@ class AlbumCards extends React.Component {
             ? <div className="card albumCard" style={{ border: album.haveListened ? '0.7vw solid #72D58F' : '' }}>
              <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
                 <div className="albumData" onClick={this.viewAlbum}>
+                <p className="position">#{album.position}</p>
                 <p className="bandName">{album.bandName}</p>
-                <p className="albumName">{album.albumName}  ({album.releaseYear})</p>
-                <p className="genre">Genre: {album.genre}</p>
-                <p className="genre">{album.position}</p>
+                <p className="albumName">{album.albumName}</p>
             </div>
             <div className="albumDataFooter">
             <label> Listened to Album</label>
@@ -107,6 +106,7 @@ class AlbumCards extends React.Component {
             : <div className="card albumCard">
               <img className="card-img-top albumImage" src={album.albumImage} alt=""/>
                 <div className="albumData">
+                <p className="position">#{album.position}</p>
                 <p className="albumName mt-2">{album.albumName}  ({album.releaseYear})</p>
                 <p>{album.bandName}</p>
                 <p>Genre: {album.genre}</p>
