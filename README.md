@@ -9,11 +9,11 @@ have listened to
 [Deployed Link](https://top100albums-3a9a6.firebaseapp.com/)
 
 #### Logged Out View
-![Logged Out View](Images\loggedOutView.JPG)
+![Logged Out View](https://github.com/bethh56/top100-albums-capstone/blob/master/Images/loggedOutView.JPG)
 
 #### Website is logged into
-![Logged In](Images\LoggedIn.JPG)
+![Logged In](https://raw.githubusercontent.com/bethh56/top100-albums-capstone/master/Images/LoggedIn.JPG)
 
 #### When hovering over the album, the user can select that they have listened to the album anc click the heart if they liked the album
-![Hovered Over image view](Images\buttons.JPG)
+![Hovered Over image view](https://raw.githubusercontent.com/bethh56/top100-albums-capstone/master/Images/buttons.JPG)
 
